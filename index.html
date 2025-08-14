@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>₹100 BONUS CASINO</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .popup, .form-container {
+    background: #222;
+    color: #fff;
+    width: 280px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0,0,0,.3);
+    animation: fadeIn .3s ease-in-out;
+  }
+  .popup .close-btn, .form-container .close-btn {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: orange;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,.3);
+    z-index: 2;
+  }
+  .popup button:not(.close-btn), .form-container button {
+    background: orange;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  .popup .sun-icon {
+    font-size: 50px;
+    color: gold;
+    margin-top: -5px;
+  }
+  .popup p {
+    margin: 10px 0;
+    font-size: 15px;
+    line-height: 1.4em;
+  }
+  .form-container {
+    display: none;
+  }
+  .telegram-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    margin: 10px 0;
+  }
+  .telegram-btn {
+    background: #0088cc;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+  .telegram-btn svg {
+    width: 14px;
+    height: 14px;
+    fill: white;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(.9); }
+    to { opacity: 1; transform: scale(1); }
+  }
+</style>
+</head>
+<body>
+
+<!-- Popup -->
+<div class="popup" id="popup">
+    <button class="close-btn" onclick="closePopup('popup')">&times;</button>
+    <div class="sun-icon">☀️</div>
+    <p>Successfully claimed the promotion code.<br><b>100.00 INR</b></p>
+    <button onclick="showForm()">Claim</button>
+</div>
+
+<!-- Form -->
+<div class="form-container" id="formContainer">
+    <h3>CLAIM YOUR &#8377;100 BONUS</h3>
+    <h5>MUST JOIN ALL CHANNELS</h5>
+
+    <div class="telegram-grid">
+        <a href="https://t.me/+1OSgIyaEUoZlN2Y1" target="_blank" class="telegram-btn">
+            <svg viewBox="0 0 24 24"><path d="M9.9999 15.2..."/></svg>
+            Join 1
+        </a>
+        <a href="https://t.me/DaddyLootsOfficial" target="_blank" class="telegram-btn">
+            <svg viewBox="0 0 24 24"><path d="M9.9999 15.2..."/></svg>
+            Join 2
+        </a>
+        <a href="https://t.me/+tpe1IhxHefJhYmQ1" target="_blank" class="telegram-btn">
+            <svg viewBox="0 0 24 24"><path d="M9.9999 15.2..."/></svg>
+            Join 3
+        </a>
+        <a href="https://t.me/+QM8iTVhyiWgzMGY1" target="_blank" class="telegram-btn">
+            <svg viewBox="0 0 24 24"><path d="M9.9999 15.2..."/></svg>
+            Join 4
+        </a>
+        <a href="https://t.me/+xDNui7nXGA02MTdl" target="_blank" class="telegram-btn">
+            <svg viewBox="0 0 24 24"><path d="M9.9999 15.2..."/></svg>
+            Join 5
+        </a>
+        <a href="https://t.me/+zQQBA2VHbDY3YzM9" target="_blank" class="telegram-btn">
+            <svg viewBox="0 0 24 24"><path d="M9.9999 15.2..."/></svg>
+            Join 6
+        </a>
+        <a href="https://t.me/+L5B8Hnh5a0s1YTNl" target="_blank" class="telegram-btn">
+            <svg viewBox="0 0 24 24"><path d="M9.9999 15.2..."/></svg>
+            Join 7
+        </a>
+        <a href="https://t.me/+Dyzx-vBRYvA1YTQ1" target="_blank" class="telegram-btn">
+            <svg viewBox="0 0 24 24"><path d="M9.9999 15.2..."/></svg>
+            Join 8
+        </a>
+        <a href="https://t.me/+f37LD2SpZNowYjQ1" target="_blank" class="telegram-btn">
+            <svg viewBox="0 0 24 24"><path d="M9.9999 15.2..."/></svg>
+            Join 9
+        </a>
+    </div>
+
+    <!-- Submit button redirects to 9th link -->
+    <button onclick="redirectToTelegram()">Submit</button>
+</div>
+
+<script>
+function closePopup(id) {
+    document.getElementById(id).style.display = 'none';
+}
+function showForm() {
+    document.getElementById('popup').style.display = 'none';
+    document.getElementById('formContainer').style.display = 'block';
+}
+function redirectToTelegram() {
+    window.location.href = "https://t.me/+f37LD2SpZNowYjQ1";
+}
+</script>
+</body>
+</html>
